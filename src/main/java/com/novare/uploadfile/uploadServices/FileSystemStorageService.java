@@ -1,4 +1,4 @@
-package com.novare.uploadfile.upload;
+package com.novare.uploadfile.uploadServices;
 
 import com.novare.uploadfile.exceptions.StorageException;
 

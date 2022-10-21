@@ -1,4 +1,4 @@
-package com.novare.uploadfile.upload;
+package com.novare.uploadfile.uploadServices;
 
 import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;

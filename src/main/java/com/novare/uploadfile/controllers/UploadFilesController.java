@@ -17,7 +17,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.novare.uploadfile.upload.IStorageService;
+import com.novare.uploadfile.uploadServices.IStorageService;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 
 import javax.servlet.http.HttpServletRequest;
@@ -54,6 +54,7 @@ public class UploadFilesController {
                 .body(file);
     }
 
+    // POST - /upload
     @PostMapping(value="/upload", consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public ResponseEntity<ResponseContentDto> uploadFile(@RequestBody RequestContentDto requestContentDto){
@@ -78,6 +79,7 @@ public class UploadFilesController {
         ResponseContentDto responseContentDto = new ResponseContentDto();
         responseContentDto.setImgUrl(content.getImage());
         responseContentDto.setTitle(content.getTitle());
+        // HTTP STATUS CODE - 201
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(responseContentDto);
     }
