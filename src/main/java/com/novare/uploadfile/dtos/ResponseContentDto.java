@@ -1,6 +1,6 @@
 package com.novare.uploadfile.dtos;
 
-public class ContentDto {
+public class ResponseContentDto {
     private String title;
     private String imgUrl;
 
