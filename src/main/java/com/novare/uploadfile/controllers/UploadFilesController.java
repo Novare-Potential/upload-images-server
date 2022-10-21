@@ -22,6 +22,7 @@ import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBui
 
 import javax.servlet.http.HttpServletRequest;
 
+// Don't forget define the origins
 @CrossOrigin(origins = "http://localhost:3000", methods = {RequestMethod.GET, RequestMethod.POST})
 @RestController
 public class UploadFilesController {
