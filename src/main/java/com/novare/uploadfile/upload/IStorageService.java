@@ -7,18 +7,17 @@ import java.nio.file.Path;
 import java.util.stream.Stream;
 
 /**
- * Este interfaz nos permite definir una abstracción de lo que debería
- * ser un almacén secundario de información, de forma que podamos usarlo
- * en un controlador.
+ /**
+ * This interface allows us to define an abstraction of what should
+ * be a secondary store of information, so that we can use it
+ * on a controller.
  *
- * De esta forma, vamos a poder utilizar un almacen que acceda a nuestro
- * sistema de ficheros, o también podríamos implementar otro que estuviera
- * en un sistema remoto, almacenar los ficheros en un sistema GridFS, ...
- *
- *
- * @author Equipo de desarrollo de Spring
+ * In this way, we will be able to use a store that accesses our
+ * file system, or we could also implement another one that was
+ * on a remote system, store the files on a GridFS system, ...
  *
  */
+
 public interface IStorageService {
 
     void init();
